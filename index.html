@@ -6,23 +6,46 @@
   <title>PetLife - Veterinario</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <header>
-    <h1>PetLife App - Panel Veterinario</h1>
-    <nav>
-      <button onclick="mostrar('inicio')">Inicio</button>
-      <button onclick="mostrar('pacientes')">Pacientes</button>
-      <button onclick="mostrar('citas')">Citas</button>
-      <button onclick="mostrar('perfil')">Perfil</button>
-    </nav>
-  </header>
 
-  <main>
-    <section id="inicio" class="contenido">Bienvenido/a veterinario/a 👩‍⚕️🐾</section>
-    <section id="pacientes" class="contenido" hidden>Aquí podrás buscar y registrar pacientes.</section>
-    <section id="citas" class="contenido" hidden>Listado de citas médicas.</section>
-    <section id="perfil" class="contenido" hidden>Edición del perfil profesional.</section>
-  </main>
+<body>
+  <div id="login-container">
+    <h2>Iniciar sesión</h2>
+    <input type="text" id="loginUsuario" placeholder="Usuario" />
+    <input type="password" id="loginPass" placeholder="Contraseña" />
+    <select id="tipoUsuario">
+      <option value="tutor">Tutor</option>
+      <option value="veterinario">Veterinario</option>
+    </select>
+    <button onclick="login()">Ingresar</button>
+    <p><a href="#" onclick="mostrarRegistro()">Registrarse como veterinario</a></p>
+  </div>
+
+  <div id="registro-container" hidden>
+    <h2>Registro Veterinario</h2>
+    <input type="text" id="registroUsuario" placeholder="Usuario" />
+    <input type="password" id="registroPass" placeholder="Contraseña" />
+    <button onclick="registrarVeterinario()">Guardar</button>
+    <p><a href="#" onclick="mostrarLogin()">Volver al login</a></p>
+  </div>
+
+  <div id="panel" hidden>
+    <header>
+      <h1>PetLife App - Panel Veterinario</h1>
+      <nav>
+        <button onclick="mostrar('inicio')">Inicio</button>
+        <button onclick="mostrar('pacientes')">Pacientes</button>
+        <button onclick="mostrar('citas')">Citas</button>
+        <button onclick="mostrar('perfil')">Perfil</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="contenido">Bienvenido/a veterinario/a 👩‍⚕️🐾</section>
+      <section id="pacientes" class="contenido" hidden>Aquí podrás buscar y registrar pacientes.</section>
+      <section id="citas" class="contenido" hidden>Listado de citas médicas.</section>
+      <section id="perfil" class="contenido" hidden>Edición del perfil profesional.</section>
+    </main>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

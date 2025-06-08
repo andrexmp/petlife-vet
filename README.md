@@ -35,7 +35,8 @@ Este prototipo está centrado únicamente en el **panel de veterinarios**, inclu
 
 1. Clona el repositorio o descarga el ZIP.
 2. Abre el archivo `index.html` en tu navegador.
-3. Explora la simulación de flujo veterinario.
+3. Regístrate como veterinario o ingresa como tutor para acceder al menú.
+4. Explora la simulación de flujo veterinario.
 
 > Este prototipo está pensado para demostración y pruebas visuales. No incluye base de datos ni lógica de backend aún.
 

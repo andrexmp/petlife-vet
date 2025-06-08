@@ -28,3 +28,18 @@ main {
 .contenido {
   margin-top: 1rem;
 }
+
+#login-container,
+#registro-container {
+  max-width: 300px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-container input,
+#registro-container input,
+#login-container select {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
