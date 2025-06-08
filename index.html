@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetLife - Veterinario</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>PetLife App - Panel Veterinario</h1>
+    <nav>
+      <button onclick="mostrar('inicio')">Inicio</button>
+      <button onclick="mostrar('pacientes')">Pacientes</button>
+      <button onclick="mostrar('citas')">Citas</button>
+      <button onclick="mostrar('perfil')">Perfil</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="contenido">Bienvenido/a veterinario/a 👩‍⚕️🐾</section>
+    <section id="pacientes" class="contenido" hidden>Aquí podrás buscar y registrar pacientes.</section>
+    <section id="citas" class="contenido" hidden>Listado de citas médicas.</section>
+    <section id="perfil" class="contenido" hidden>Edición del perfil profesional.</section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
